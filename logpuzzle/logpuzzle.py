@@ -51,10 +51,10 @@ def download_images(img_urls, dest_dir):
 		os.makedirs(dest_dir)
 	os.chdir(dest_dir)
 	j = 0
-	'''for i in img_urls:
+	for i in img_urls:
 		urllib.urlretrieve('http://code.google.com'+i,'img'+str(j)+'.jpg')
 		j+=1
-	'''
+	
  	with open('index.html', 'w') as index:
 		index.write('<HTML>\n<BODY>\n')
 	j = 0
